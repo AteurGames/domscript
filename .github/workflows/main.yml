@@ -1,0 +1,15 @@
+name: Main
+
+on: 
+  push:
+    branches:
+      - master
+
+jobs:
+  minify:
+     name: Minify Javascript code
+     runs-on: ${{ matrix.os }}
+     strategy:
+       matrix:
+         os: [ubuntu-latest, windows-latest, macOS-latest]
+      
