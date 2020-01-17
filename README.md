@@ -34,3 +34,5 @@ document.open();
 document.write(compiledHTML);
 document.close();
 ```
+## Contribute
+Contributing is easy! Simply go to `src/domscript.js` and edit away. After, make sure to minify it, apply it to the `gh-pages` branch, and send a pull request.
