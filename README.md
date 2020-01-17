@@ -37,3 +37,10 @@ document.close();
 ```
 ## Contribute
 Contributing is easy! Simply go to `src/domscript.js`, create a branch from the `code` branch, and edit away. Then, push your changes into the `code` branch. After, make sure to minify it and send a pull request.
+
+## Importing
+To import:
+```html
+<script src="https://ateurgames.github.io/domscript/src/domscript.min.js"></script>
+<!-- Other scripts below -->
+```
