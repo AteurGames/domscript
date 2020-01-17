@@ -1,7 +1,6 @@
 # domscript
-A framework(?) for easy manipulation of HTML elements in an object-oriented way.
 
-With it, you can easily create HTML elements, and edit them at any time:
+With domscript, you can easily create HTML elements, and edit them at any time:
 
 ```js
 var html = DS.Element('html',[],[
@@ -37,4 +36,4 @@ document.write(compiledHTML);
 document.close();
 ```
 ## Contribute
-Contributing is easy! Simply go to `src/domscript.js` and edit away. After, make sure to minify it, apply it to the `gh-pages` branch, and send a pull request.
+Contributing is easy! Simply go to `src/domscript.js`, create a branch from the `code` branch, and edit away. Then, push your changes into the `code` branch. After, make sure to minify it and send a pull request.
