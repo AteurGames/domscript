@@ -131,6 +131,7 @@ domscript.Style.RGB = function(r,g,b) {
 		}
 	};
 	out.export.exists = true;
+	return out;
 }
 domscript.Script = function(attr,content) {
 	var out = DS.Element('script',attr,content.toString());
