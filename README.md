@@ -1,5 +1,5 @@
 # domscript
-With it, you can easily create HTML elements, and edit them at any time:
+With domscript, you can easily create HTML elements, and edit them at any time:
 
 ```js
 var html = DS.Element('html',[],[
