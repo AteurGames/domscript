@@ -38,9 +38,7 @@ domscript.Element = function(tag,attr,content) {
 		},
 		getAttr: function(key) {
 			if(!this.checkAttr(key)) { return; }
-			for(var i=0; this.attr[i][0] != key; i++) {
-
-			}
+			for(var i=0; this.attr[i][0] != key; i++);
 			return this.attr[i][1];
 		},
 		export: function() {
@@ -125,17 +123,17 @@ domscript.Style.Plaintext = function(text) {
 }
 domscript.Style.RGB = function(r,g,b) {
 	var out = {
-		type: 'rgb',
 		r: r,
 		g: g,
 		b: b,
 		export: function() {
-			return `rgb(${r},${g},${b}`;
+			return `rgb(${r},${g},${b})`;
 		}
 	};
 	out.export.exists = true;
 }
 domscript.Script = function(attr,content) {
-	var out = DS.Element('script',attr,)
+	var out = DS.Element('script',attr,content.toString());
+	return out;
 }
 var DS = domscript;
