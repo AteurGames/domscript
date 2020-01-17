@@ -1,6 +1,4 @@
 # domscript
-A framework(?) for easy manipulation of HTML elements in an object-oriented way.
-
 With it, you can easily create HTML elements, and edit them at any time:
 
 ```js
