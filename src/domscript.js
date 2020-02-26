@@ -104,11 +104,19 @@ domscript.Style.Rule = function(key,value) {
 		key: key,
 		value: value,
 		export: function() {
+			var out = "";
 			try {
-				return this.key.export()+": "+this.value.export()+";";
+				out += key.export();
 			} catch(er) {
-				return this.key+": "+this.value+";";
+				out += key;
 			}
+			out += ": ";
+			try {
+				out += value.export();
+			} catch (er) {
+				out += value;
+			}
+			return out;
 		}
 	};
 }
@@ -128,9 +136,11 @@ domscript.Style.RGB = function(r,g,b) {
 		b: b,
 		export: function() {
 			return `rgb(${r},${g},${b})`;
-		}
+		},
+		exists: true
 	};
 	out.export.exists = true;
+	return out;
 }
 domscript.Script = function(attr,content) {
 	var out = DS.Element('script',attr,content.toString());
